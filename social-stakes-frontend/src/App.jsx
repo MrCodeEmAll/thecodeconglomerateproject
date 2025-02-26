@@ -4,13 +4,12 @@ import Bets from "./pages/Bets";
 import CreateBet from "./pages/CreateBet";
 import Notifications from "./pages/Notifications";
 import Profile from "./pages/Profile";
-import BottomNav from "./components/BottomNav"; // Adjust path if needed
-
+import BottomNav from "./components/BottomNav"; 
 
 function App() {
   return (
     <Router>
-      <div className="pb-16"> {/* Padding for bottom nav */}
+      <div className="pb-16"> 
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/bets" element={<Bets />} />
@@ -18,11 +17,9 @@ function App() {
           <Route path="/notifications" element={<Notifications />} />
           <Route path="/profile" element={<Profile />} />
         </Routes>
-    { }
-
       </div>
-      
-      <BottomNav />
+
+      <BottomNav /> 
     </Router>
   );
 }
