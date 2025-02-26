@@ -4,7 +4,8 @@ import Bets from "./pages/Bets";
 import CreateBet from "./pages/CreateBet";
 import Notifications from "./pages/Notifications";
 import Profile from "./pages/Profile";
-import BottomNav from "./components/BottomNav";
+import BottomNav from "./components/BottomNav"; // Adjust path if needed
+
 
 function App() {
   return (
@@ -17,7 +18,10 @@ function App() {
           <Route path="/notifications" element={<Notifications />} />
           <Route path="/profile" element={<Profile />} />
         </Routes>
+    { }
+
       </div>
+      
       <BottomNav />
     </Router>
   );
